@@ -1,0 +1,28 @@
+                .:+yysoo/:.             
+        -+yddddddhyssyydddds/.         
+      .+hdddddddddddddddyysddddy/`      
+    `oddddddddddddddddddddh/yddddh/     
+  -dddddhs+::...-//oydddddd+odddddy.   
+  :dddho//osyhddyo+::-`:odddd-sdddddh-  
+-ddd++ydddddo:`         .odds.ddddddd  
+`hdh+hdddddo.   -+shhs+-   -hd.hdddddd  
+:dy+dddddd/    sdddddddds`  -d.ddddddd  
+od/dddddd/o   /dddddddddd+   o:ddddddy:.
+o:ydddddo.s   /dddddddddd+   :ydddddd/d.
+..dddddd:/d.   sdddddddds`  `ydddddd+hd.
+/dddddd:.dh.   -+oyho+-   :yddddds/hds 
+-dddddd:`hddo`         `:yddddh+/oddd` 
+  +dddddh`/ddddo-` -::+yyyyo+:.-odddh-  
+  :hddddy`oddddddyo//-...::+shddddy.   
+    `sddddh::hdddddddddddddddddddh/     
+      .+hdddy+/sdddddddddddddddy/`      
+        -+ydddy+o+oyydddddds/.         
+            `-/+ooys+-    `             
+
+
+To apply please write to jobs@repl.it with the following:
+- in the subject line mention the role you're applying for
+- for engineering roles, please solve this (quick) problem and drop a link to your repl: https://otcatchup.util.repl.co
+- your resume and links to portfolio, website, Repl.it, or GitHub etc
+- a little bit about why you're interested in working at Repl.it
+- if this is for a remote position please indicate so and let us know why you prefer remote

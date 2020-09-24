@@ -1,0 +1,47 @@
+    :::       ::: :::    :::  ::::::::       :::       ::: :::::::::: 
+   :+:       :+: :+:    :+: :+:    :+:      :+:       :+: :+:         
+  +:+       +:+ +:+    +:+ +:+    +:+      +:+       +:+ +:+          
+ +#+  +:+  +#+ +#++:++#++ +#+    +:+      +#+  +:+  +#+ +#++:++#      
++#+ +#+#+ +#+ +#+    +#+ +#+    +#+      +#+ +#+#+ +#+ +#+            
+#+#+# #+#+#  #+#    #+# #+#    #+#       #+#+# #+#+#  #+#             
+###   ###   ###    ###  ########          ###   ###   ##########    
+
+                    :::       :::::::::  ::::::::::
+                  :+: :+:    :+:    :+: :+:
+                 +:+   +:+  +:+    +:+ +:+
+                +#++:++#++: +#++:++#:  +#++:++#
+               +#+     +#+ +#+    +#+ +#+ 
+              #+#     #+# #+#    #+# #+# 
+             ###     ### ###    ### ##########
+
+Our vision is to create a programming environment that blurs
+the distinction between learning and building. A development
+experience where the tedious setup and maintenance of the
+environment is taken away and what's left is the programmer and
+their creativity. This programming experience would be powered
+by what we're calling a Holistic Development Service: an
+always-on service that understands your code in all its stages,
+A service that can be accessed anywhere you are regardless of
+your device, platform, or programming language.
+
+We are a small team with a passion for making programming
+learnable, accessible, and usable. Amjad and Haya started
+working on the idea that would become Repl.it back in 2011 and
+by open-sourcing the underlining technology they helped launch
+the learn-to-code movement. Amjad then joined Codecademy as a
+founding engineer to make it easy for people to learn coding
+online. Afterward, Amjad joined Facebook where he worked on
+React Native and brought the same philosophy of fast iteration
+and feedback loops (REPL) to mobile development.
+
+In 2016, Haya and Amjad went back to working on Repl.it and
+decided to take it from a side project to a company. Shortly
+after Mason joined them and since then we've built our IDE,
+our live-deployment container cloud, and our education platform.
+So far we've touched so many lives with our technology --
+millions of students around the world learned to code on our
+platform, made tens of thousands of CS teachers more effective,
+and empowered developers to build and share their creations with
+the world.
+
+Meet our team on the about page: https://repl.it/site/about

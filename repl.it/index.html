@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OT Catchup (Repl.it)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+<h2 id="catching-up">Catching up</h2>
+<p>Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync. Don’t worry if you’ve never heard of or worked with operational transformations before; there are many variants and we’re going to define our own simple operations right here.</p>
+<p>An operational transformation takes a document (you can think of it a string) plus a position within that document and either modifies the document at that position or skips to a new position. That’s it! Some examples:</p>
+<ul>
+<li><code>""</code>, position 0, <code>{"op": "insert", "chars": "Hello, human!"}</code> ➡️ <code>"Hello, human!"</code>, position 13</li>
+<li><code>"What is up?"</code>, position 7, <code>{"op": "delete", "count": 3}</code> ➡️ <code>"What is?"</code>, position 7</li>
+<li><code>"Nice!"</code>, position 0, <code>{"op": "skip", "count": 4}</code>, <code>{"op": "insert", "chars": " day"}</code> ➡️ <code>"Nice day!"</code>, position 9</li>
+</ul>
+<p>One thing to watch out for is that you can’t skip or delete past the end of the string.</p>
+<p>Now, back to keeping everyone in a multiplayer repl in sync. We often have to ask a client to catch up to the current state of the repl. When catching up, it’s important to validate that a sequence of operational transformations does indeed produce the most recent version of a file. You’re going to write the validation function. The function will take in a string for the stale file contents, a string containing the latest file contents, and a JSON string containing the operations. You may use any language! Here are some examples in JavaScript:</p>
+<pre><code>function isValid(stale, latest, otjson) {
+  // this is the part you will write!
+}
+
+isValid(
+  &#39;Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;Repl.it uses operational transformations.&#39;,
+  &#39;[{&quot;op&quot;: &quot;skip&quot;, &quot;count&quot;: 40}, {&quot;op&quot;: &quot;delete&quot;, &quot;count&quot;: 47}]&#39;
+); // true
+
+isValid(
+  &#39;Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;Repl.it uses operational transformations.&#39;,
+  &#39;[{&quot;op&quot;: &quot;skip&quot;, &quot;count&quot;: 45}, {&quot;op&quot;: &quot;delete&quot;, &quot;count&quot;: 47}]&#39;
+); // false, delete past end
+
+isValid(
+  &#39;Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;Repl.it uses operational transformations.&#39;,
+  &#39;[{&quot;op&quot;: &quot;skip&quot;, &quot;count&quot;: 40}, {&quot;op&quot;: &quot;delete&quot;, &quot;count&quot;: 47}, {&quot;op&quot;: &quot;skip&quot;, &quot;count&quot;: 2}]&#39;
+); // false, skip past end
+
+isValid(
+  &#39;Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;We use operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;[{&quot;op&quot;: &quot;delete&quot;, &quot;count&quot;: 7}, {&quot;op&quot;: &quot;insert&quot;, &quot;chars&quot;: &quot;We&quot;}, {&quot;op&quot;: &quot;skip&quot;, &quot;count&quot;: 4}, {&quot;op&quot;: &quot;delete&quot;, &quot;count&quot;: 1}]&#39;
+); // true
+
+isValid(
+  &#39;Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.&#39;,
+  &#39;[]&#39;
+); // true</code></pre>
+<p>Please <a href="https://repl.it/signup">sign up</a> for a Repl.it account if you have not already. Create a new repl for this problem and do all your coding in that repl. We ask that you spend no more than 30 minutes on this. When you're ready to share your repl with us, please click the Share button, find the link that starts with <code>https://repl.it/join/</code>, copy it, and send it to us! We value straightforward, working code over clever, not-quite-working code, so try to get something working right away, even if it doesn’t cover all the possible cases. Good luck! We can’t wait to hear from you.</p>
+  </body>
+</html>

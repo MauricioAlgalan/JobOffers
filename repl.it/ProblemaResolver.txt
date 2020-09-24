@@ -1,0 +1,73 @@
+Catching up
+
+Repl.it uses operational transformations to keep everyone in a multiplayer repl
+in sync. Don’t worry if you’ve never heard of or worked with operational
+transformations before; there are many variants and we’re going to define our
+own simple operations right here.
+
+An operational transformation takes a document (you can think of it a string)
+plus a position within that document and either modifies the document at that
+position or skips to a new position. That’s it! Some examples:
+
+  • "", position 0, {"op": "insert", "chars": "Hello, human!"} ➡️ "Hello,
+    human!", position 13
+  • "What is up?", position 7, {"op": "delete", "count": 3} ➡️ "What is?",
+    position 7
+  • "Nice!", position 0, {"op": "skip", "count": 4}, {"op": "insert", "chars":
+    " day"} ➡️ "Nice day!", position 9
+
+One thing to watch out for is that you can’t skip or delete past the end of the
+string.
+
+Now, back to keeping everyone in a multiplayer repl in sync. We often have to
+ask a client to catch up to the current state of the repl. When catching up,
+it’s important to validate that a sequence of operational transformations does
+indeed produce the most recent version of a file. You’re going to write the
+validation function. The function will take in a string for the stale file
+contents, a string containing the latest file contents, and a JSON string
+containing the operations. You may use any language! Here are some examples in
+JavaScript:
+
+function isValid(stale, latest, otjson) {
+  // this is the part you will write!
+}
+
+isValid(
+  'Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.',
+  'Repl.it uses operational transformations.',
+  '[{"op": "skip", "count": 40}, {"op": "delete", "count": 47}]'
+); // true
+
+isValid(
+  'Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.',
+  'Repl.it uses operational transformations.',
+  '[{"op": "skip", "count": 45}, {"op": "delete", "count": 47}]'
+); // false, delete past end
+
+isValid(
+  'Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.',
+  'Repl.it uses operational transformations.',
+  '[{"op": "skip", "count": 40}, {"op": "delete", "count": 47}, {"op": "skip", "count": 2}]'
+); // false, skip past end
+
+isValid(
+  'Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.',
+  'We use operational transformations to keep everyone in a multiplayer repl in sync.',
+  '[{"op": "delete", "count": 7}, {"op": "insert", "chars": "We"}, {"op": "skip", "count": 4}, {"op": "delete", "count": 1}]'
+); // true
+
+isValid(
+  'Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.',
+  'Repl.it uses operational transformations to keep everyone in a multiplayer repl in sync.',
+  '[]'
+); // true
+
+Please sign up for a Repl.it account if you have not already. Create a new repl
+for this problem and do all your coding in that repl. We ask that you spend no
+more than 30 minutes on this. When you're ready to share your repl with us,
+please click the Share button, find the link that starts with https://repl.it/
+join/, copy it, and send it to us! We value straightforward, working code over
+clever, not-quite-working code, so try to get something working right away,
+even if it doesn’t cover all the possible cases. Good luck! We can’t wait to
+hear from you.
+

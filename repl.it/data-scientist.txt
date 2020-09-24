@@ -1,0 +1,32 @@
+Note that the listed roles are merely approximations. If
+you're a talented hacker but don't really fit the
+requirements then get in touch anyways.
+
+============================================
+Position: Data Scientist
+
+Whether you're learning how to code, teaching computer science, or building a side-project with friends, Replit makes it fun & easy to code and launch projects. We're looking for a data scientist who can both delight our community by surfacing their data in useful ways and give us insight into how grow that community.
+============================================
+
+Roles & Responsibilities
+------------------------
+* Build compelling product features and marketing content using data from a wide range of sources (Postgres, Redis, Google Cloud Storage, BigQuery, Prometheus)
+* Create and maintain interactive visualizations
+* Collaborate with engineering, operations, and marketing to better understand business and community needs
+
+Key Qualifications
+------------------
+* You like getting your hands dirty and are able to build for the future
+* Proven skills in data mining, analysis, and visualization
+* Strong customer focus and understanding of business goals and requirements
+* A passion for delivering engaging presentations, clear reports, and actionable insights
+
+Bonus Points
+------------
+* You've shipped features to production
+* You've worked at an early stage company
+* You have a background in design or a creative discipline
+
+Job Location
+-------------
+SF or Remote (currently only open to +/-4 hours from pacific timezone)

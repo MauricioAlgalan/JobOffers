@@ -1,0 +1,7 @@
+We are looking to partner with teachers and educators to create free curricula, assignments, and projects for anyone teaching with Repl.it. Check out what we've developed so far https://docs.repl.it/curriculum/Intro in the Repl.it docs. 
+
+This is a paid opportunity, and you will be compensated for your time spent as well as given recognition. The content must be made freely available and anyone who uses it must be able to use it, modify it, and share it freely (provided that recognition is given). We're interested in any type of curriculum, experience level, or programming langauge that is widely used in teaching programming & computer science.
+
+Note: we're just paying per course and this is not a full-time role.
+
+Interested? Email jobs@repl.it.
